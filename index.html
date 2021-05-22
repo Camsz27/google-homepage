@@ -10,8 +10,24 @@
                 font-family: Arial,sans-serif;
                 font-size: 14px;
             }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .header {
+                display: inline;
+                float: right;
+                font-size: 13px;
+                vertical-align: baseline;
+                text-align: end;
+                padding: 12px 10px;
+            }
             .center {
-                margin: 200px 0px 0px;
+                margin-top: 200px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 250px;
             }
             #searchbar {
                 margin-top: 1%;
@@ -43,13 +59,57 @@
                 width: 24px;
                 height: 24px;
             }
+            .sign-in {
+                color: #fff;
+                background-color: #4285f4;
+                border-color: #4285f4;
+                width: 69.34px;
+                height: 30px;
+                box-shadow: none;
+                border: solid;
+                border-radius: 4px;
+                font-size: 13px;
+            }
+            .app {
+                color: black;
+                opacity: 0.55;
+                width: 30px;
+                height: 30px;
+            }
+            .text {
+                padding: 20px 5px;
+                color: rgba(0,0,0,0.87)
+            }
+            .footer {
+                color: #70757a;
+                background-color: #f2f2f2;
+                display: inline-block;
+                height: 46px;
+                margin-right: 20px;
+                margin-bottom: 0px;
+                padding-top: 20px;
+            }
+            .down1 {
+                background-color: #f2f2f2;
+                margin-top: 270px;
+                height: 48px;
+            }
+            .down {
+                background-color: #f2f2f2;
+                height: 48px;
+                margin-top: -5px;
+                margin-bottom: 0px;
+                vertical-align: text-bottom;
+            }
         </style>
     </head>
     <body>
         <div>
             <ul>
-                <li>About</li> 
-                <li>Store</li>
+                <li class="header"><button name="sign-in" class="sign-in">Sign in</button></li>
+                <li class="header"><img src="/images/outline_apps_black_24dp.png" alt="App" class="app"></span></li>
+                <li class="text header">Images</li>
+                <li class="text header">Gmail</li>
             </ul>
         </div>
         <div style="text-align: center;">
@@ -65,4 +125,23 @@
             <button name="google-search" class="button">I'm Feeling Lucky</button>
         </div>
     </body>
+    <footer style="background-color: #f2f2f2;">
+        <div>
+            <ul class="down1">
+                <li class="footer" style="font-size: 15px;">Colombia</li>
+            </ul>
+        </div>
+        <div>
+            <hr style="width:100%; color: #70757a; margin-left: 0px; margin-right: 0px;">
+            <ul class="down">
+                <li class="footer" style="text-align: left;">About</li>
+                <li class="footer" style="text-align: left;">Advertising</li>
+                <li class="footer" style="text-align: left;">Business</li>
+                <li class="footer" style="text-align: left; margin-right: 850px;">How Search Works</li>
+                <li class="footer" style="text-align: right;">Privacy</li>
+                <li class="footer" style="text-align: right;">Terms</li>
+                <li class="footer" style="text-align: right;">Settings</li>
+            </ul>
+        </div>
+    </footer>
 </html>
