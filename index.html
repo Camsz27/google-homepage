@@ -5,14 +5,22 @@
         <title>Google</title>
         <style>
             .center {
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-top: 15%;
+                margin: 200px 0px 0px;
+            }
+            #searchbar {
+                margin-top: 1%;
+                width: 584px;
+                height: 45px;
             }
         </style>
     </head>
     <body>
-        <img class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        <div style="text-align: center;">
+            <img class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+            alt="Google logo">
+            <form action="search">
+                <input type="search" name="searchbar" id="searchbar">
+            </form>
+        </div>
     </body>
 </html>
