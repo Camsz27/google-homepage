@@ -23,6 +23,9 @@
                 text-align: end;
                 padding: 12px 10px;
             }
+            .header:hover {
+                text-decoration: underline;
+            }
             .center {
                 margin-top: 200px;
                 margin-right: 0px;
@@ -38,13 +41,24 @@
                 border: 1px solid #dfe1e5;
                 box-shadow: none;
             }
+            #searchbar:hover {
+                background-color: #fff;
+                box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+                border-color: rgba(223,225,229,0);
+            }
             .button {
-                color: #5F6368;
-                background-color: #f2f2f2;
+                color: #3c4043;
+                background-color: #f8f9fa;
                 width: 142.5px;
                 height: 36px;
                 border: white;
                 margin: 11px 4px;
+            }
+            .button:hover{
+                box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+                background-color: #f8f9fa;
+                border: 1px solid #dadce0;
+                color: #202124
             }
             .material-icons {
                 color: #9AA0A6;
@@ -84,22 +98,29 @@
                 color: #70757a;
                 background-color: #f2f2f2;
                 display: inline-block;
-                height: 46px;
                 margin-right: 20px;
                 margin-bottom: 0px;
-                padding-top: 20px;
             }
             .down1 {
                 background-color: #f2f2f2;
-                margin-top: 270px;
-                height: 48px;
+                margin-top: 230px;
+                height: 24px;
+                padding-top: 20px;
+            }
+            .footer:hover {
+                text-decoration: underline;
             }
             .down {
                 background-color: #f2f2f2;
-                height: 48px;
-                margin-top: -5px;
+                height: 32px;
                 margin-bottom: 0px;
+                padding-top: 16px;
                 vertical-align: text-bottom;
+            }
+            .location {
+                color: #222;
+                font-size: 13px;
+                padding-top: 20px;
             }
         </style>
     </head>
@@ -123,21 +144,23 @@
             </form>
             <button name="google-search" class="button">Google Search</button>
             <button name="google-search" class="button">I'm Feeling Lucky</button>
+            <p class="location">Google offered in: <a href="https://www.google.com/setprefs?sig=0_7EBXRw2_QAJ4XDOjtzeHOiEDdZQ%3D&amp;
+                hl=es-419&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjCuJD4v97wAhVGGFkFHVjUC8oQ2ZgBCA4">Español (Latinoamérica)</a></p>
         </div>
     </body>
     <footer style="background-color: #f2f2f2;">
         <div>
             <ul class="down1">
-                <li class="footer" style="font-size: 15px;">Colombia</li>
+                <li class="footer" style="font-size: 15px; margin-left: 20px;">Colombia</li>
             </ul>
         </div>
         <div>
             <hr style="width:100%; color: #70757a; margin-left: 0px; margin-right: 0px;">
             <ul class="down">
-                <li class="footer" style="text-align: left;">About</li>
+                <li class="footer" style="text-align: left; margin-left: 20px;">About</li>
                 <li class="footer" style="text-align: left;">Advertising</li>
                 <li class="footer" style="text-align: left;">Business</li>
-                <li class="footer" style="text-align: left; margin-right: 850px;">How Search Works</li>
+                <li class="footer" style="text-align: left; margin-right: 830px;">How Search Works</li>
                 <li class="footer" style="text-align: right;">Privacy</li>
                 <li class="footer" style="text-align: right;">Terms</li>
                 <li class="footer" style="text-align: right;">Settings</li>
